@@ -1,6 +1,15 @@
 import turtle
 import random
+import time
+seconds=60
+for i in range(seconds):
+    print(str(seconds-i)+"seconds remain")
+    time.sleep(1)
 
+rami=turtle.clone()
+rami.penup()
+rami.goto(0,150)
+rami.write("ProCatch", move=False, align="center", font=("Arial", 48, "normal"))
 
 
 size_x=800
@@ -10,6 +19,8 @@ turtle.setup(size_x,size_y)
 turtle.penup()
 
 square_size=20
+START_LENGTH = 1
+TIME_STEP = 100
 
 #lists
 trash_pos=[]
@@ -48,8 +59,11 @@ def make_trash():
 
 for i in range(31):
     make_trash()
+
+
+
     
 
-
+turtle.mainloop()
 
 
