@@ -1,10 +1,13 @@
 import turtle
 import random
 import time
+
+
 seconds=60
 for i in range(seconds):
     print(str(seconds-i)+"seconds remain")
     time.sleep(1)
+
 
 rami=turtle.clone()
 rami.penup()
@@ -21,6 +24,7 @@ turtle.penup()
 square_size=20
 START_LENGTH = 1
 TIME_STEP = 100
+
 
 #lists
 trash_pos=[]
